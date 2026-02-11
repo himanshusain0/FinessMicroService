@@ -6,7 +6,7 @@ import com.fitness.userService.model.User;
 import com.fitness.userService.repository.UserRepository;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.jspecify.annotations.Nullable;
+//import org.jspecify.annotations.Nullable;
 import org.springframework.stereotype.Service;
 
 @Service
