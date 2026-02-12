@@ -24,6 +24,7 @@ public class UserService {
         }
 
         User user = new User();
+//        user.setUserId(request.getUserId());
         user.setEmail(request.getEmail());
         user.setPassword(request.getPassword());
         user.setFirstName(request.getFirstName());
@@ -58,5 +59,9 @@ public class UserService {
 
         return  userResponse;
 
+    }
+
+    public Boolean existByUserId(String userId) {
+        return  userRepository.existsByUserId(userId);
     }
 }
