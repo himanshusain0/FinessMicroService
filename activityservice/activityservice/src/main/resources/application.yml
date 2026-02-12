@@ -1,0 +1,29 @@
+server:
+  port: 8082   # ?? user-service se alag port hona chahiye
+
+spring:
+  application:
+    name: activity-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/fitnessdb
+    username: root
+    password: Himanshu@2002#
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # Dev ke liye theek hai
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  jackson:
+    serialization:
+      indent_output: true
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
