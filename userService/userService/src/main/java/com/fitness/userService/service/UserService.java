@@ -7,12 +7,14 @@ import com.fitness.userService.repository.UserRepository;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 //import org.jspecify.annotations.Nullable;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class UserService {
-//    public @Nullable UserResponse getUserProfile(String userId) {
+//    public @Nullable UserResponse ge/*/**/*/tUserProfile(String userId) {
 //
 //    }
     private final UserRepository userRepository;
@@ -62,6 +64,7 @@ public class UserService {
     }
 
     public Boolean existByUserId(String userId) {
-        return  userRepository.existsByUserId(userId);
+        log.info("calling validation by userid : +{}" + userId);
+        return  userRepository.existsById(userId);
     }
 }
