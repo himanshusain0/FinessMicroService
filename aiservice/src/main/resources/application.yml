@@ -1,0 +1,25 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: ai-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/fitnessdb
+    username: root
+    password: Himanshu@2002#
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # 🔥 THIS WAS MISSING
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+eureka:
+  client:
+    service-Url:
+      defaultZone: http://localhost:8761/eureka/
