@@ -24,16 +24,17 @@ public class Recommendation {
     private  String id;
     private  String activityId;
     private String userId;
+    private String recommendation;
     private String activityType;
 
     @Column(columnDefinition = "TEXT")
-    private String improvements;
+    private List<String> improvements;
 
     @Column(columnDefinition = "TEXT")
-    private String suggestions;
+    private List<String>  suggestions;
 
     @Column(columnDefinition = "TEXT")
-    private String safety;
+    private List<String> safety;
 
     @CreationTimestamp
     private LocalDateTime createdAt;

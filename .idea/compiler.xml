@@ -3,7 +3,7 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true">
-        <processorPath useProcessorModulePath="true">
+        <processorPath useClasspath="false" useProcessorModulePath="true">
           <entry name="$PROJECT_DIR$/activityservice" />
         </processorPath>
       </profile>
@@ -11,6 +11,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false" />
         <module name="activityservice" />
         <module name="eureka" />
         <module name="userService" />
